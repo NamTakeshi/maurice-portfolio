@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio — Maurice</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav scrolled" id="nav">
+    <a href="index.html" class="nav__logo">Maurice</a>
+    <ul class="nav__links">
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav__burger" aria-label="Menü öffnen" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="nav__mobile">
+    <a href="portfolio.html">Portfolio</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Page Header -->
+  <header class="page-header reveal">
+    <span class="page-header__eyebrow">Selected Work</span>
+    <h1 class="page-header__title">Portfolio</h1>
+    <p class="page-header__meta">12 Campaigns &nbsp;·&nbsp; 2022 – 2025</p>
+  </header>
+
+  <!-- Grid -->
+  <main class="portfolio-section">
+    <div class="portfolio-grid" id="portfolio-grid">
+      <!-- Filled dynamically by JS -->
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="modal-backdrop" role="dialog" aria-modal="true" aria-label="Kampagnen Detail">
+    <div class="modal">
+      <div class="modal__media">
+        <img id="modal-img" src="" alt="">
+        <button class="modal__close" id="modal-close" aria-label="Schließen">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M18 6L6 18M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal__content">
+        <div>
+          <div class="modal__brand" id="modal-brand"></div>
+          <h2 class="modal__title" id="modal-title"></h2>
+        </div>
+        <p class="modal__desc" id="modal-desc"></p>
+        <div class="modal__stats">
+          <div>
+            <div class="modal__stat-value" id="modal-views"></div>
+            <div class="modal__stat-label">Total Views</div>
+          </div>
+          <div>
+            <div class="modal__stat-value" id="modal-engagement"></div>
+            <div class="modal__stat-label">Engagement Rate</div>
+          </div>
+        </div>
+        <p class="modal__platforms" id="modal-platforms"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span class="footer__copy">&copy; 2025 Maurice. All rights reserved.</span>
+    <div class="footer__social">
+      <a href="https://instagram.com/mauricecreates" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://tiktok.com/@mauricecreates" target="_blank" rel="noopener">TikTok</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

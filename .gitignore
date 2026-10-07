@@ -1,0 +1,18 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Test screenshots (dev artifacts)
+test-*.png
+ardasaatci-*.png
+
+# Playwright dev artifacts
+.playwright-mcp/
+
+# Original unprocessed photos (processed versions are in images/)
+maurice bilder/
+
+# Editor
+.vscode/
+*.swp
